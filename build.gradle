@@ -25,7 +25,13 @@ springBoot {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.3.6.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+    compile group: 'org.springframework.security.oauth.boot', name: 'spring-security-oauth2-autoconfigure', version: '2.1.9.RELEASE'
+    compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.8'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.8'
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.11'
 
     implementation 'commons-io:commons-io:2.5'
     implementation 'commons-lang:commons-lang:2.6'
